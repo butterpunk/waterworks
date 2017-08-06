@@ -20,19 +20,21 @@
 	padding-bottom: 150px;
 }
 .packages-container-container{
-    background: url(Assets/background.png) no-repeat center center;
+	padding-top: 80px;
+	padding-bottom: 80px;
+    background: url(Assets/background.png) no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;	
-    background-color: grey;
+	background-color: #dddddd;
 }
 .single-package{
 	padding-bottom: 40px;
 	padding-top: 40px;
 }
 .packages-container{
-	width: 500px;
+	width: 700px;
 	margin: auto;
 }
 #map {
@@ -55,12 +57,16 @@
 .footer{
 	background-color: blue;
 }
+.premium-container{
+	width: 80%;
+	margin: auto;
+}
 h1
 {
 	color: blue;
 }
 #location{
-	background-color: grey;
+	background-color: #dddddd;
 	text-align: center;
 	padding-bottom: 40px;
 	padding-top: 40px;
