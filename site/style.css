@@ -5,7 +5,22 @@
 
 @import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700);
 
-
+.hero-container{
+    background: url(http://via.placeholder.com/1000x600) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 600px;	
+}
+.single-package{
+	padding-bottom: 40px;
+	padding-top: 40px;
+}
+.packages-container{
+	width: 500px;
+	margin: auto;
+}
 h1
 {
 	color: blue;
