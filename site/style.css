@@ -21,6 +21,10 @@
 	width: 500px;
 	margin: auto;
 }
+#map {
+	height: 400px;
+	width: 100%;
+}
 h1
 {
 	color: blue;
