@@ -25,12 +25,38 @@
 	height: 400px;
 	width: 100%;
 }
+.buy-now-container{
+	width: 80%;
+	margin: auto;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+.buy-now-container h1{
+	text-align: center;
+}
+.single-buy{
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+.footer{
+	background-color: blue;
+}
 h1
 {
 	color: blue;
 }
-
-
+#location{
+	background-color: grey;
+	text-align: center;
+	padding-bottom: 40px;
+	padding-top: 40px;
+}
+#premiumS{
+	background-color: green;
+	text-align: center;
+	padding-bottom: 40px;
+	padding-top: 40px;
+}
 
 
 
