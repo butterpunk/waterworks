@@ -1,3 +1,78 @@
-h1{
-	color: red;
+/*
+<code to be commented out>
+<Other code to be commented out>
+*/
+
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700);
+
+
+h1
+{
+	color: blue;
+}
+
+
+
+
+
+/*mobile*/
+@media(max-width: 1000px)
+{
+
+   
+    #premiumS
+    {
+	text-align: center;
+	background-color: #2ddece;
+	margin: auto;
+	border-bottom-style: solid;
+	border-top-style: solid;
+	border-color: #2ddece;
+	border-width: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+    }
+
+    #premiumS h1
+    {
+	margin-bottom: 0px;
+	font-size: 2.25em;
+	font-weight: 400;
+	font-color: blue;
+    }
+
+
+    #location
+    {
+	text-align: center;
+	background-color: #d9d9d9;
+	margin: auto;
+	border-bottom-style: solid;
+	border-top-style: solid;
+	border-color: #d9d9d9;
+	border-width: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+    }
+
+    #location h1
+    {
+	margin-bottom: 20px;
+	font-size: 2.25em;
+	font-weight: 400;
+	font-color: blue;
+    }
+
+    #location h2
+    {
+	margin-bottom: 20px;
+	font-size: 1.25em;
+	font-weight: 400;
+	font-color: blue;
+    }
+
+
+
+
+    
 }
