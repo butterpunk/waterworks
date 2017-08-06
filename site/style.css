@@ -11,13 +11,20 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 600px;	
+    height: 600px;
+    padding-bottom: 100px;
+    margin-bottom: -100px;
+    position: relative;
+    
+    
 }
 .main-logo-container{
 	max-width: 400px;
 	margin: auto;
 	padding-top: 150px;
 	padding-bottom: 150px;
+	
+
 }
 .packages-container-container{
 	padding-top: 80px;
@@ -27,15 +34,25 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;	
-	background-color: #dddddd;
+    background-color: #dddddd;
+    
+    
+    
 }
 .single-package{
 	padding-bottom: 40px;
 	padding-top: 40px;
+	
+	
 }
 .packages-container{
 	width: 700px;
 	margin: auto;
+	
+	
+	
+	
+	
 }
 #map {
 	height: 400px;
@@ -55,7 +72,7 @@
 	padding-bottom: 40px;
 }
 .footer{
-	background-color: blue;
+	background-color: #293C94;
 }
 .premium-container{
 	width: 80%;
@@ -63,16 +80,23 @@
 }
 h1
 {
-	color: blue;
+	color: #293C94;
 }
+
+h3
+{
+	color: #293C94;
+}
+
 #location{
 	background-color: #dddddd;
 	text-align: center;
 	padding-bottom: 40px;
 	padding-top: 40px;
+	
 }
 #premiumS{
-	background-color: green;
+	background-color: #75c1c5;
 	text-align: center;
 	padding-bottom: 40px;
 	padding-top: 40px;
@@ -81,18 +105,18 @@ h1
 
 
 /*mobile*/
-@media(max-width: 1000px)
+@media(max-width: 700px)
 {
 
    
     #premiumS
     {
 	text-align: center;
-	background-color: #2ddece;
+	background-color: #75c1c5;
 	margin: auto;
 	border-bottom-style: solid;
 	border-top-style: solid;
-	border-color: #2ddece;
+	border-color: #75c1c5;
 	border-width: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
@@ -103,7 +127,7 @@ h1
 	margin-bottom: 0px;
 	font-size: 2.25em;
 	font-weight: 400;
-	font-color: blue;
+	font-color: #293C94;
     }
 
 
@@ -118,6 +142,7 @@ h1
 	border-width: 0px;
 	margin-top: 0px;
 	margin-bottom: 0px;
+	
     }
 
     #location h1
@@ -125,7 +150,7 @@ h1
 	margin-bottom: 20px;
 	font-size: 2.25em;
 	font-weight: 400;
-	font-color: blue;
+	font-color: #293C94;
     }
 
     #location h2
@@ -133,11 +158,9 @@ h1
 	margin-bottom: 20px;
 	font-size: 1.25em;
 	font-weight: 400;
-	font-color: blue;
+	font-color: #293C94;
     }
 
 
-
-
-    
+ 
 }
