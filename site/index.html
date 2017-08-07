@@ -14,6 +14,8 @@
     <meta name="description" content="water works site">
     <meta name="author" content="Blake Butterworth">
 	<title>Water Works</title> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="style.css">
   </head>
@@ -22,31 +24,27 @@
 
 <body>
 <!--<h3 style="color:red; background: grey; height: 50px;">hello</h3>-->
-
- <div class="row">
- <div class="col-xs-5">
-   <img class="img-responsive"  src="Assets/phone.png" style="display:inline;"/>
-          <h3 style="font-size: 1em; display: inline;"> 504-305-0334 | Mon-Sat 8am-7pm | Sun 9am-6pm </h3>
- </div>
-
- <div class="col-xs-4">
-    <h3 style="font-size: 1em; display: inline;">  &nbsp &nbsp &nbsp weather </h3>
- </div>
-
- <div class="col-xs-3 text-right">
-  
-    <h3 style="font-size: 1em; display: inline;"> Get Directions &nbsp &nbsp
-     &nbsp    </h3>
+<div class="bb-navbar">
+   <div class="row">
+     <div class="col-xs-5">
+       <img class="img-responsive"  src="Assets/phone.png" style="display:inline;"/>
+              <h3 style="font-size: 1em; display: inline;"> 504-305-0334 | Mon-Sat 8am-7pm | Sun 9am-6pm </h3>
      </div>
- 
- </div>
+     <div style="display: inline;" class="col-xs-4">
+       <h3 id="scrollweather" style="font-size: 1em;">  &nbsp &nbsp &nbsp weather </h3> 
+        <img id="scrollimg" class="sticky-header-hide" style="width: 100px;" src="Assets/headerlogo@2x.png"/>
+     </div>
+     <div style="display: inline;" class="col-xs-3 text-right">
+        <h3 style="font-size: 1em; display: inline;"> Get Directions</h3>
+      </div>
+   </div>
+  </div>
+</div>
 
-
-
-<div class="navbar">
+<!-- <div class="navbar">
   <p>Navbar Header</p>
 </div>
-<div class="push"></div>
+<div class="push"></div> -->
 
 
 <div class="hero-container">
@@ -185,7 +183,12 @@
   <h1>$2 Off Every Tuesday</h1>
 </div>
 <div class="footer">
-<h2>Footer Placeholder</h2>
+<div class="sections-container">
+<p>Locations</p><p>Pakages</p><p>Buy Now</p>
+</div>
+<div class="sections-container">
+2017 Water Works Car Wash | Privacy Policy
+</div>
 </div>
 
 <script>
@@ -203,8 +206,21 @@
 </script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGij09-hmdXqhStqJxButRLDTJRtI7yDg&callback=initMap">
 </script>
-
-
+<script>
+  // $(document).ready(function() {
+      $(window).scroll(function() {
+          if ($(document).scrollTop() > 100) {
+              console.log('here');
+              $('#scrollimg').removeClass('sticky-header-hide');
+              $('#scrollweather').addClass('sticky-header-hide');
+          }
+          else {
+              $('#scrollweather').removeClass('sticky-header-hide');
+              $('#scrollimg').addClass('sticky-header-hide');
+          }
+      });
+  // });​
+</script>
 
 
 

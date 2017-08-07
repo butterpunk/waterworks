@@ -22,8 +22,20 @@
     margin-bottom: 75px
 }
 
-
-
+.sticky-header-hide{
+    display: none;
+}
+.bb-navbar{
+    background-color: #dddddd;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
 .hero-container
 {
     background: url(Assets/herowheel.png) no-repeat center center;
@@ -103,7 +115,10 @@
     padding-bottom: 40px;
 }
 .footer{
+    padding-left: 20px;
+    padding-right: 20px;
     background-color: #293C94;
+    color: white;
 }
 .premium-container{
     width: 80%;
@@ -180,7 +195,18 @@ h3
     font-weight: 400;
     font-color: #293C94;
 }
- 
+ .sticky-header-hide{
+    display: none;
+}
+.sections-container p{
+    padding-left: 35px;
+    padding-right: 35px;
+    display: inline;
+}
+.sections-container{
+    padding-bottom: 40px;
+    padding-top: 20px;
+}
  /*mobile*/
  @media(max-width: 700px)
  {
