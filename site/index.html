@@ -26,11 +26,16 @@
 </div>
 <div class="hero-container">
   <div class="main-logo-container">
-      <img class="img-responsive" src="Assets/logo@2x.png"/>
+      <img class="img-responsive" src="Assets/headerlogo@2x.png"/>
   </div>
-</div>
+  </div>
+
+
+
+  
 <div class="packages-container-container">
-  <div class="packages-container">
+<div class="packages-container">
+  
     <h1 style="text-align: center; margin-top: 40px; margin-bottom: 40px;">Wash Packages</h1>
     <div id="the-works" class="single-package">
       <div class="img-container">
@@ -87,7 +92,7 @@
 
 <div name="location" id="location">
   <img src="Assets/location.png"/>
-  <h2>6489 Jefferson Hwy, Harahan, LA 70123</h2>
+  <h3>6489 Jefferson Hwy, Harahan, LA 70123</h3>
 </div>
 <div id="map"></div>
 <div class="buy-now-container">
@@ -111,9 +116,9 @@
 
 <script>
   function initMap() {
-    var uluru = {lat: -25.363, lng: 131.044};
+    var uluru = {lat: 29.939115, lng: -90.193979};
     var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 4,
+      zoom: 12,
       center: uluru
     });
     var marker = new google.maps.Marker({
