@@ -21,22 +21,100 @@
 
 
 <body>
+<!--<h3 style="color:red; background: grey; height: 50px;">hello</h3>-->
+
+ <div class="row">
+ <div class="col-xs-5">
+   <img class="img-responsive"  src="Assets/phone.png" style="display:inline;"/>
+          <h3 style="font-size: 1em; display: inline;"> 504-305-0334 | Mon-Sat 8am-7pm | Sun 9am-6pm </h3>
+ </div>
+
+ <div class="col-xs-4">
+    <h3 style="font-size: 1em; display: inline;">  &nbsp &nbsp &nbsp weather </h3>
+ </div>
+
+ <div class="col-xs-3 text-right">
+  
+    <h3 style="font-size: 1em; display: inline;"> Get Directions &nbsp &nbsp
+     &nbsp    </h3>
+     </div>
+ 
+ </div>
+
+
+
 <div class="navbar">
   <p>Navbar Header</p>
 </div>
+<div class="push"></div>
+
+
 <div class="hero-container">
   <div class="main-logo-container">
-      <img class="img-responsive" src="Assets/logo@2x.png"/>
+      <img class="img-responsive" src="Assets/headerlogo@2x.png"/>
   </div>
-</div>
-<div class="packages-container-container">
-  <div class="packages-container">
+  </div>
+
+
+<div class="packages-container-container-small">
+  <div class="packages-container-small">
+   
+    <h1 style="text-align: center; margin-top: 40px; margin-bottom:
+    40px;">Wash Packages</h1>
+    <h1 style="text-align: center; margin-top: 40px; margin-bottom:
+    40px;">The Works</h1>
+    <h1 style="text-align: center; margin-top: 40px; margin-bottom:
+    40px;">$15</h1>
+    <h1 style="text-align: center; margin-top: 40px; margin-bottom:
+    40px;">Wash Club: $45.95/mo</h1>
+    
+    
+    
+
+
+    <div class="row">
+ <div class="col-xs-6">
+   <h3 style="font-size: 1em;">  Full Body Wash </h3>
+   <h3 style="font-size: 1em;">  Wheel & Rim Cleaner </h3>
+   <h3 style="font-size: 1em;">  Spot-Free Rinse </h3>
+   <h3 style="font-size: 1em;">  Wax & Shine </h3>
+ </div>
+
+ <div class="col-xs-6">
+   <h3 style="font-size: 1em;">  &nbsp Hot Wax Shine* </h3>
+   <h3 style="font-size: 1em;">  &nbsp Buff and Dry* </h3>
+   <h3 style="font-size: 1em;">  &nbsp Triple Foam* </h3>
+   <h3 style="font-size: 1em;">  &nbsp Tire Shine* </h3>
+   <h3 style="font-size: 1em;">  &nbsp Rain-X* </h3>
+ </div>
+
+ 
+ </div>
+
+    
+      
+    </div>
+    
+
+    </div>
+
+
+
+    
+  <div class="packages-container-container-big">
+    
+  
+   <div class="packages-container-big">
+  
     <h1 style="text-align: center; margin-top: 40px; margin-bottom: 40px;">Wash Packages</h1>
-    <div id="the-works" class="single-package">
+
+     <div id="the-works" class="single-package">
+
       <div class="img-container">
         <img class="img-responsive" src="Assets/wash1.png"/>
       </div>
     </div>
+
     <div id="ultimate" class="single-package">
         <img class="img-responsive"  src="Assets/wash2.png"/>
     </div>
@@ -46,7 +124,8 @@
     <div id="basic" class="single-package">
         <img  class="img-responsive" src="Assets/wash4.png"/>
     </div>  
-  </div>
+    </div>
+    
 </div>
 
 
@@ -87,7 +166,7 @@
 
 <div name="location" id="location">
   <img src="Assets/location.png"/>
-  <h2>6489 Jefferson Hwy, Harahan, LA 70123</h2>
+  <h3>6489 Jefferson Hwy, Harahan, LA 70123</h3>
 </div>
 <div id="map"></div>
 <div class="buy-now-container">
@@ -106,14 +185,14 @@
   <h1>$2 Off Every Tuesday</h1>
 </div>
 <div class="footer">
-<h1>Footer Placeholder</h1>
+<h2>Footer Placeholder</h2>
 </div>
 
 <script>
   function initMap() {
-    var uluru = {lat: -25.363, lng: 131.044};
+    var uluru = {lat: 29.939115, lng: -90.193979};
     var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 4,
+      zoom: 12,
       center: uluru
     });
     var marker = new google.maps.Marker({
