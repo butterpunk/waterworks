@@ -87,6 +87,32 @@
 
 
 <div class="hero-container-big">
+<div class="sections-container hero-section-container">
+  <a href="#">
+    <div class="single-section">
+      <div style="display: inline;" class="small-icon-container">
+            <img src="Assets/locationarrow.png"/>
+      </div>
+      <p style="color: white;">Locations</p>
+    </div>
+  </a>
+  <a href="#">
+    <div class="single-section">
+      <div style="display: inline;" class="small-icon-container">
+            <img src="Assets/packagestag.png"/>
+      </div>
+      <p style="color: white;">Packages</p>
+    </div>
+  </a>
+  <a href="#">
+    <div class="single-section">
+      <div style="display: inline;" class="small-icon-container">
+            <img src="Assets/creditcard.png"/>
+      </div>
+      <p style="color: white;">Buy Now</p>
+    </div>
+  </a>
+</div>
   <div class="main-logo-container">
       <img class="img-responsive" src="Assets/headerlogo@2x.png"/>
   </div>
@@ -97,7 +123,12 @@
 
 
   <div class="hero-container-mobile">
-    
+    <div class="mobile-hours-location-container">
+      <p>504-305-0334</p>
+      <p>Mon-Sat 8am-7pm</p>
+      <p>Sun 9am-6pm</p>
+      <p>6489 Jefferson Highway</p>
+    </div>
     <div class="wheel-container-mobile">
       <img class="img-responsive" src="Assets/wheel.png"/>
     </div>
@@ -305,10 +336,33 @@
 </div>
 <div class="footer">
 <div class="sections-container">
-<p>Locations</p><p>Pakages</p><p>Buy Now</p>
+  <a href="#">
+    <div class="single-section">
+      <div style="display: inline;" class="small-icon-container">
+            <img src="Assets/locationarrow.png"/>
+      </div>
+      <p style="color: white;">Locations</p>
+    </div>
+  </a>
+  <a href="#">
+    <div class="single-section">
+      <div style="display: inline;" class="small-icon-container">
+            <img src="Assets/packagestag.png"/>
+      </div>
+      <p style="color: white;">Packages</p>
+    </div>
+  </a>
+  <a href="#">
+    <div class="single-section">
+      <div style="display: inline;" class="small-icon-container">
+            <img src="Assets/creditcard.png"/>
+      </div>
+      <p style="color: white;">Buy Now</p>
+    </div>
+  </a>
 </div>
-<div class="sections-container">
-2017 Water Works Car Wash | Privacy Policy
+<div class="copyrite-container">
+  2017 Water Works Car Wash | Privacy Policy
 </div>
 </div>
 
@@ -330,7 +384,7 @@
 <script>
   // $(document).ready(function() {
       $(window).scroll(function() {
-          if ($(document).scrollTop() > 100) {
+          if ($(document).scrollTop() > 400) {
               console.log('here');
               $('#scrollimg').removeClass('sticky-header-hide');
               $('#scrollweather').addClass('sticky-header-hide');

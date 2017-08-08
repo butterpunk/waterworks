@@ -18,7 +18,7 @@
     font-size: 32px !important;
 }
 .mobile-side-menus{
-    padding-top: 24px;
+    padding-top: 5px;
 }
 .bb-navbar
 {
@@ -263,18 +263,47 @@ h3
 {
     display: none;
 }
+.single-section{
+    display: inline;
+    padding-right: 60px;
+}
 .sections-container p
 {
-    padding-left: 35px;
-    padding-right: 35px;
+/*    padding-left: 35px;
+    padding-right: 35px;*/
     display: inline;
 }
 .sections-container
 {
     padding-bottom: 40px;
     padding-top: 20px;
+    background-color: #293C94;
+    color: white;
+    float: right;
 }
- /*mobile*/
+.copyrite-container{
+    background-color: #293C94;
+    color: white;
+}
+.hero-section-container{
+background-color: transparent;
+color:white;
+display: inline;
+position: relative;
+top: 70px;
+}
+.mobile-hours-location-container p{
+display: inline;
+ color: white;
+}
+.mobile-hours-location-container{
+    position: relative;
+    top: 86px;
+    width: 200px;
+    float: right;
+    text-align: center;
+}
+/*mobile*/
 @media(max-width: 700px)
  {
     .packages-container-container-big
