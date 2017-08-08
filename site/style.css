@@ -279,7 +279,7 @@ h3
     padding-top: 20px;
     background-color: #293C94;
     color: white;
-    float: right;
+  
 }
 .copyrite-container{
     background-color: #293C94;
@@ -291,6 +291,7 @@ color:white;
 display: inline;
 position: relative;
 top: 70px;
+  float: right;
 }
 .mobile-hours-location-container p{
 display: inline;
