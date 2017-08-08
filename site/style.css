@@ -4,11 +4,21 @@
 */
 
 @import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700);
-
-
+.center-nav{
+    text-align: center;
+}
+.side-nav{
+    padding-top: 10px;
+}
 .sticky-header-hide
 {
     display: none;
+}
+.bb-hamburger{
+    font-size: 32px !important;
+}
+.mobile-side-menus{
+    padding-top: 24px;
 }
 .bb-navbar
 {
@@ -49,15 +59,23 @@
     z-index: 100;
 }
 
-
+.wheel-container{
+    width: 100px;
+    margin: auto;
+    padding-top: 58px;
+}
+.dropdown-container{
+    color: white;
+    background-color: #75c1c5;
+}
 .hero-container
 {
-    background: url(Assets/herowheel.png) no-repeat center center;
+    background: url(Assets/background-car.png) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 690px;
+    height: 600px;
     padding-bottom: 0px;
     margin-bottom: -100px;
     position: relative;
@@ -71,7 +89,7 @@
 }
 .packages-container-container-big
 {
-    padding-top: 80px;
+    padding-top: 180px;
     padding-bottom: 80px;
     background: url(Assets/background.png) no-repeat;
     -webkit-background-size: cover;
@@ -84,7 +102,7 @@
 
 .packages-container-container-small
 {
-    padding-top: 80px;
+    padding-top: 180px;
     padding-bottom: 80px;
     background: url(Assets/background.png) no-repeat;
     -webkit-background-size: cover;
