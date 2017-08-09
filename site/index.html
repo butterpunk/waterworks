@@ -56,9 +56,11 @@
       </div>
    </div>
   <div id="drop" class="dropdown-container">
-      <div class="dropdown-item">
-        <p>Location</p>
-      </div>
+      <a id="try" href="#">
+        <div class="dropdown-item">
+          <p>Location</p>
+        </div>
+      </a>
       <div class="dropdown-item">
         <p>Packages</p>
       </div>
@@ -414,6 +416,10 @@ $.get( "https://api.openweathermap.org/data/2.5/weather?id=4335045&units=Imperia
     console.log(temp,desc);
 });
 </script>
-
-
+<script>
+$('#try').click( function(event){
+    event.stopPropagation();
+    $('#drop').toggle();
+});
+</script>
 </body>
