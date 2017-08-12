@@ -314,7 +314,13 @@ display: inline;
     border-radius: 10px;
     padding: 4px 4px 4px 4px;
 }
-
+.buy-now-single{
+    max-width: 125px;
+    margin: auto;
+}
+#weird-single{
+    max-width: 170px;
+}
 /*mobile*/
 @media(max-width: 700px)
  {
