@@ -14,6 +14,7 @@
     <meta name="description" content="water works site">
     <meta name="author" content="Blake Butterworth">
 	<title>Water Works</title> 
+  <script src="https://use.fontawesome.com/d23b6c1e83.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -28,13 +29,19 @@
 <div class="bb-navbar">
    <div class="row">
      <div class="col-xs-4  side-nav">
-       <img class="img-responsive"  src="Assets/phone.png" style="display:inline;"/>
-              <h3 style="font-size: 1em; display: inline;"> 504-305-0334 | Mon-Sat 8am-7pm | Sun 9am-6pm </h3>
+        <span id="mobile-ham" class="sticky-header-hide glyphicon glyphicon-menu-hamburger bb-hamburger desktop-hamburger"></span>
+        <div class="phone-times">
+          <img class="img-responsive"  src="Assets/phone.png" style="display:inline;"/>
+          <h3 style="font-size: 1em; display: inline;"> 504-305-0334 | Mon-Sat 8am-7pm | Sun 9am-6pm </h3>
+        </div>
      </div>
      <div style="display: inline;" class="col-xs-4">
         <div class="center-nav">
-           <h3 id="scrollweather" style="font-size: 1em;">  &nbsp &nbsp &nbsp <span id="desc"></span>|<span id="temp"></span> </h3> 
-            <img id="scrollimg" class="sticky-header-hide" style="width: 100px;" src="Assets/headerlogo@2x.png"/>
+          <div id="scrollweather">
+          <img id="weather-icon" style="width: 40px; display: inline;" src="Assets/weathericons/weather11.png"/>
+           <h3 style="font-size: 1em; display: inline;"><span id="desc"></span>&nbsp &nbsp|&nbsp &nbsp<span id="temp"></span> </h3> 
+            </div>
+            <img id="scrollimg" class="sticky-header-hide" style="width: 130px;" src="Assets/headerlogo@2x.png"/>
         </div>
      </div>
      <div style="display: inline;" class="col-xs-4 text-right side-nav">
@@ -50,6 +57,31 @@
 
       </div>
    </div>
+    <div id="dropDesk" class="dropdown-container">
+      
+      <a id="try" href="#location">
+        <div class="dropdown-item">
+          <p>Location</p>
+        </div>
+      </a>
+
+      <a id="try1" href="#packages">
+      <div class="dropdown-item">
+        <p>Packages</p>
+      </div>
+       </a>
+
+      <a id="try2" href="#buynow">
+      <div class="dropdown-item">
+        <p>Buy Now</p>
+      </div>
+       </a>
+      <div class="social-container">
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+    </div>
+  </div> 
   </div>
 
 
@@ -92,6 +124,11 @@
         <p>Buy Now</p>
       </div>
        </a>
+      <div class="social-container">
+      <i class="fa fa-instagram" aria-hidden="true"></i>
+      <i class="fa fa-twitter" aria-hidden="true"></i>
+      <i class="fa fa-facebook" aria-hidden="true"></i>
+    </div>
   </div>
   </div>
 
@@ -174,105 +211,87 @@
    <img class="img-responsive"  src="Assets/washpackages@2x.png" style="margin-top: 40px; text-align: center; height: 40px; margin-left: 50px;"/>
 
    <img class="img-responsive"  src="Assets/theworksmobile@2x.png" style="margin-top: 40px; text-align: center; height: 40px; margin-left: 50px;"/>
-
-    <h1 style="text-align: center; margin-top: 40px; margin-bottom:
-    40px;">$15</h1>
-    <h1 style="text-align: center; margin-top: 40px; margin-bottom:
-    40px;">Wash Club: $45.95/mo</h1>
-    
-    
-    
-
-
+    <h1 class="packages-price-mobile"style="text-align: center">$15</h1>
+    <h1 class="wash-club-price-mobile">Wash Club: $45.95/mo</h1>
+  <div class="feature-container">  
     <div class="row">
- <div class="col-xs-6">
-   <h3 style="font-size: 1em;">  Full Body Wash </h3>
-   <h3 style="font-size: 1em;">  Wheel & Rim Cleaner </h3>
-   <h3 style="font-size: 1em;">  Spot-Free Rinse </h3>
-   <h3 style="font-size: 1em;">  Wax & Shine </h3>
- </div>
-
- <div class="col-xs-6">
-   <h3 style="font-size: 1em;">  &nbsp Hot Wax Shine* </h3>
-   <h3 style="font-size: 1em;">  &nbsp Buff and Dry* </h3>
-   <h3 style="font-size: 1em;">  &nbsp Triple Foam* </h3>
-   <h3 style="font-size: 1em;">  &nbsp Tire Shine* </h3>
-   <h3 style="font-size: 1em;">  &nbsp Rain-X* </h3>
- </div>
-
- 
- </div>
-
+      <div class="col-xs-6">
+        <h3>  Full Body Wash </h3>
+        <h3>  Wheel & Rim Cleaner </h3>
+        <h3>  Spot-Free Rinse </h3>
+        <h3>  Wax & Shine </h3>
+      </div>
+      <div class="col-xs-6">
+        <h3>  &nbsp Hot Wax Shine* </h3>
+        <h3>  &nbsp Buff and Dry* </h3>
+        <h3>  &nbsp Triple Foam* </h3>
+        <h3>  &nbsp Tire Shine* </h3>
+        <h3>  &nbsp Rain-X* </h3>
+      </div>
+    </div>
+  </div>
 
 <img class="img-responsive"  src="Assets/ultimatemobile@2x.png" style="margin-top: 40px; text-align: center; height: 40px; margin-left: 95px;"/>
-    <h1 style="text-align: center; margin-top: 40px; margin-bottom:
-    40px;">$12</h1>
-    <h1 style="text-align: center; margin-top: 40px; margin-bottom:
-    40px;">Wash Club: $35.95/mo</h1>
-
+    <h1  class="packages-price-mobile"  style="text-align: center;">$12</h1>
+    <h1  class="wash-club-price-mobile">Wash Club: $35.95/mo</h1>
+<div class="feature-container">  
 <div class="row">
  <div class="col-xs-6">
-   <h3 style="font-size: 1em;">  Full Body Wash </h3>
-   <h3 style="font-size: 1em;">  Wheel & Rim Cleaner </h3>
-   <h3 style="font-size: 1em;">  Spot-Free Rinse </h3>
-   <h3 style="font-size: 1em;">  Wax & Shine </h3>
-   <h3 style="font-size: 1em;">  Turbo Dry </h3>
+   <h3>  Full Body Wash </h3>
+   <h3>  Wheel & Rim Cleaner </h3>
+   <h3>  Spot-Free Rinse </h3>
+   <h3>  Wax & Shine </h3>
+   <h3>  Turbo Dry </h3>
  </div>
 
  <div class="col-xs-6">
-   <h3 style="font-size: 1em;">  &nbsp Free Vacuum </h3>
-   <h3 style="font-size: 1em;">  &nbsp Triple Foam* </h3>
-   <h3 style="font-size: 1em;">  &nbsp Tire Shine* </h3>
-   <h3 style="font-size: 1em;">  &nbsp Rain-X* </h3>
+   <h3>  &nbsp Free Vacuum </h3>
+   <h3>  &nbsp Triple Foam* </h3>
+   <h3>  &nbsp Tire Shine* </h3>
+   <h3>  &nbsp Rain-X* </h3>
  </div>
-
-
+</div>
 </div>
 
 <img class="img-responsive"  src="Assets/premiummobile@2x.png" style="margin-top: 40px; text-align: center; height: 40px; margin-left: 90px;"/>
-    <h1 style="text-align: center; margin-top: 40px; margin-bottom:
-    40px;">$8</h1>
-    <h1 style="text-align: center; margin-top: 40px; margin-bottom:
-    40px;">Wash Club: $29.95/mo</h1>
-
+    <h1  class="packages-price-mobile"   style="text-align: center;">$8</h1>
+    <h1  class="wash-club-price-mobile" >Wash Club: $29.95/mo</h1>
+<div class="feature-container">  
 <div class="row">
  <div class="col-xs-6">
-   <h3 style="font-size: 1em;">  Full Body Wash </h3>
-   <h3 style="font-size: 1em;">  Wheel & Rim Cleaner </h3>
-   <h3 style="font-size: 1em;">  Spot-Free Rinse </h3>
-   <h3 style="font-size: 1em;">  Wax & Shine </h3>
+   <h3> Full Body Wash </h3>
+   <h3> Wheel & Rim Cleaner </h3>
+   <h3> Spot-Free Rinse </h3>
+   <h3> Wax & Shine </h3>
   
  </div>
 
  <div class="col-xs-6">
-   <h3 style="font-size: 1em;">  &nbsp Dryer </h3>
-   <h3 style="font-size: 1em;">  &nbsp Free Vacuum </h3>
-   <h3 style="font-size: 1em;">  &nbsp Tire Shine* </h3>
+   <h3> &nbsp Dryer </h3>
+   <h3> &nbsp Free Vacuum </h3>
+   <h3> &nbsp Tire Shine* </h3>
  </div>
 
 </div>
-
+</div>
 
 <img class="img-responsive"  src="Assets/basicmobile@2x.png" style="margin-top: 40px; text-align: center; height: 40px; margin-left: 135px;"/>
-    <h1 style="text-align: center; margin-top: 40px; margin-bottom:
-    40px;">$5</h1>
-    <h1 style="text-align: center; margin-top: 40px; margin-bottom:
-    40px;">Wash Club: $19.95/mo</h1>
-
+    <h1   class="packages-price-mobile"  style="text-align: center;">$5</h1>
+    <h1  class="wash-club-price-mobile" >Wash Club: $19.95/mo</h1>
+<div class="feature-container"> 
 <div class="row">
  <div class="col-xs-6">
-   <h3 style="font-size: 1em;">  Full Body Wash </h3>
-   <h3 style="font-size: 1em;">  Spot-Free Rinse </h3>
+   <h3> Full Body Wash </h3>
+   <h3> Spot-Free Rinse </h3>
   
  </div>
-
  <div class="col-xs-6">
-   <h3 style="font-size: 1em;">  &nbsp Dryer </h3>
-   <h3 style="font-size: 1em;">  &nbsp Free Vacuum </h3>
+   <h3> &nbsp Dryer </h3>
+   <h3> &nbsp Free Vacuum </h3>
  </div>
 
 </div>
-    
+  </div>  
       
     </div>
     
@@ -374,7 +393,20 @@
       </div>
     </div>
   </div>
-  <h1>$2 Off Every Tuesday</h1>
+  <div class="row two-off-container">
+    <div class="col-xs-6"> 
+      <div class="two-off">
+        <h1>$2</h1>
+        <h1 id="off">Off</h1>
+      </div> 
+    </div>
+    <div class="col-xs-6">
+        <div class="every-tues"> 
+         <h1>Every</h1>
+          <h1 id="tues">Tuesday</h1>
+        </div>  
+    </div>
+  </div>
 </div>
 
 <div class="footer">
@@ -404,8 +436,19 @@
     </div>
   </a>
 </div>
-<div class="copyrite-container">
-  2017 Water Works Car Wash | Privacy Policy
+<div class="row">
+  <div class="col-xs-6">
+    <div class="copyrite-container">
+      2017 Water Works Car Wash | Privacy Policy
+    </div>
+  </div>
+  <div class="col-xs-6">
+    <div class="social-container footer-social">
+      <i class="fa fa-instagram" aria-hidden="true"></i>
+      <i class="fa fa-twitter" aria-hidden="true"></i>
+      <i class="fa fa-facebook" aria-hidden="true"></i>
+    </div>
+  </div>
 </div>
 </div>
 
@@ -430,10 +473,12 @@
           if ($(document).scrollTop() > 400) {
               console.log('here');
               $('#scrollimg').removeClass('sticky-header-hide');
+              $('#mobile-ham').removeClass('sticky-header-hide');
               $('#scrollweather').addClass('sticky-header-hide');
           }
           else {
               $('#scrollweather').removeClass('sticky-header-hide');
+              $('#mobile-ham').addClass('sticky-header-hide');
               $('#scrollimg').addClass('sticky-header-hide');
           }
       });
@@ -441,8 +486,12 @@
 </script>
 <script>
 $('#drop').hide();
+$('#dropDesk').hide();
 $('#trigger').click( function(){
     $('#drop').toggle();
+});
+$('#mobile-ham').click( function(){
+    $('#dropDesk').toggle();
 });
 </script>
 <script>
@@ -452,6 +501,18 @@ $.get( "https://api.openweathermap.org/data/2.5/weather?id=4335045&units=Imperia
 
     temp = data.main.temp
     desc = data.weather[0].main
+    code = data.weather[0].id
+    if(code == 800){
+      $('#weather-icon').attr("src","Assets/weathericons/weather11.png");
+    }else if(code == 801 || code == 802 || code== 803 || code== 804){
+      console.log('breaking into cloud?');
+       $('#weather-icon').attr("src","Assets/weathericons/weather1.png");
+    }else if(code >= 200  & code <=500){
+      console.log('breaking into thunderstorm');
+      $('#weather-icon').attr("src","Assets/weathericons/weather7.png");
+    }else{
+        $('#weather-icon').attr("src","Assets/weathericons/weather11.png");
+    }
     $('#desc').text(desc);
     $('#temp').text(temp);
     console.log(temp,desc);

@@ -12,6 +12,12 @@
 .side-nav{
     padding-top: 10px;
 }
+.desktop-hamburger{
+    display: block;
+    margin-top: -15px;
+    margin-bottom: 15px;
+    color: #293C94;
+}
 .sticky-header-hide
 {
     display: none;
@@ -320,6 +326,65 @@ display: inline;
 }
 #weird-single{
     max-width: 170px;
+}
+.packages-price-mobile{
+    color:grey;
+    font-size: 26px;
+}
+.wash-club-price-mobile{
+    font-size: 24px;
+    text-align: center;
+}
+.feature-container{
+    width: 80%;
+    margin: auto;
+}
+.feature-container h3{
+    font-size: 18px;
+    color: grey;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+.every-tues{
+    float: left;
+}
+.two-off{
+    float: right;
+}
+.two-off h1{
+    margin-top: 1px;
+    margin-bottom: 0px;
+    color: #75c1c5;
+}
+.every-tues h1{
+    margin-top: 1px;
+    margin-bottom: 0px;
+    color: #293C94;
+}
+.two-off-container{
+    margin-left: -70px;
+}
+#off{
+    font-size: 27px;
+}
+#tues{
+    font-size: 23px;
+}
+
+/*.phone-times{
+    margin-top: 15px;
+}*/
+.footer-social{
+    font-size: 28px;
+    padding-bottom: 25px;
+    float: right;
+}
+.social-container{
+    font-size: 28px; 
+}
+.footer-social i{
+    padding-left: 15px;
+    padding-right: 15px;
 }
 /*mobile*/
 @media(max-width: 700px)
