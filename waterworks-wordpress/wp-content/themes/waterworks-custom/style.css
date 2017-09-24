@@ -20,7 +20,12 @@ This simple theme was built using the example Bootstrap theme "Basic marketing s
 */
 
 @import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700);
-
+html { 
+    height:100%;
+}
+body { 
+    min-height:100%;
+}
 
 a{
     color:inherit;
@@ -479,6 +484,38 @@ top: 70px;
 .site-description{
     display: none;
 }
+#full-screen{
+    width: 100%;
+    height: 130%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1000000;
+   
+     background: url(Assets/background.png) no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+     background-color: #d9d9d9;
+}
+.fa-4{
+    float: right;
+    font-size: 4em !important;
+    color: #293C94;
+}
+.full-screen-content-container{
+    padding: 75px 75px;
+}
+#full-screen h3{
+    font-size: 16px;
+}
+.full-screen-location-container{
+    padding: 25px 25px;
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: #293C94;
+}
 /*mobile*/
 @media(max-width: 1200px){
  .now-accepting-container .words{
@@ -499,6 +536,10 @@ top: 70px;
 }
 @media(max-width: 700px)
  {
+     .full-screen-content-container{
+         padding-left: 15px;
+         padding-right: 50px;
+     }
     .premiumServs{
         width: 100%;
     }  

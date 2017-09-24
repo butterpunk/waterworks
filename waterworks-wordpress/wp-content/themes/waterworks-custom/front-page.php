@@ -1,7 +1,8 @@
 <?php get_header(); ?>
- 
 
-  <a name="home"></a>
+<div id="full-page-content">
+
+<a name="home"></a>
 <h1 class="site-description">Waterworks - your neighborhood carwash Harahan Louisiana</h1>
 <div class="bb-navbar">
    <div class="row">
@@ -31,12 +32,13 @@
      
 
 
-<a href="https://www.google.com/maps/place/6489+Jefferson+Hwy,+Harahan,+LA+70123/@29.9391056,-90.1961574,17z/data=!4m18!1m12!4m11!1m3!2m2!1d-90.1939633!2d29.9392869!1m6!1m2!1s0x8620ba508686bc87:0x312c997a600af39d!2s6489+Jefferson+Hwy,+Harahan,+LA+70123!2m2!1d-90.1939687!2d29.9391056!3m4!1s0x8620ba508686bc87:0x312c997a600af39d!8m2!3d29.9391056!4d-90.1939687" target="_blank">
+
       <img class="img-responsive"  src="<?=get_template_directory_uri(); ?>/Assets/clock.png" style="display:inline; width: 18px;"/>
           <h3 style="font-size: 1em; display: inline;"> &nbsp Mon-Sat 8am-7pm | Sun 9am-6pm &nbsp  &nbsp </h3>
+<span id="show-full-screen">
      <img class="img-responsive"  src="<?=get_template_directory_uri(); ?>/Assets/locationarrowBlue.png" style="display:inline; height: 30px;"/>
-        <h3 style="font-size: 1em; display: inline;">&nbsp Get Directions</h3>
-</a>
+        <h3 style="font-size: 1em; display: inline;">&nbsp Locations</h3>
+</span>
 
 
       </div>
@@ -82,7 +84,7 @@
 
      </div>
      <div style="display: inline;" class="col-xs-4 text-right  mobile-side-menus">
-            <a  href="https://www.google.com/maps/place/6489+Jefferson+Hwy,+Harahan,+LA+70123/@29.9391056,-90.1961574,17z/data=!4m18!1m12!4m11!1m3!2m2!1d-90.1939633!2d29.9392869!1m6!1m2!1s0x8620ba508686bc87:0x312c997a600af39d!2s6489+Jefferson+Hwy,+Harahan,+LA+70123!2m2!1d-90.1939687!2d29.9391056!3m4!1s0x8620ba508686bc87:0x312c997a600af39d!8m2!3d29.9391056!4d-90.1939687" target="_blank">
+            <a id="show-full-screen-01">
 
        <img class="img-responsive"  src="<?=get_template_directory_uri(); ?>/Assets/locationarrowBlue.png" style="display:inline; height: 40px;"/>
      </a>
@@ -492,6 +494,53 @@
 </div>
 </div>
 
+</div>
+
+ <div id="full-screen">
+    
+    <a id="exit-full-screen"> <i class="fa fa-times fa-4"></i> </a>
+    <div class="full-screen-content-container">
+            <div class="row">
+                <?php $args = array('post_type' => 'location'); ?>
+                <?php $loop = new WP_Query($args); ?>
+
+                <?php if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post(); ?>
+
+                           
+                    <div class="col-xs-12 col-sm-4">
+
+                        <div class="full-screen-location-container">
+
+                            <?php	
+                                    
+                                $location_name = get_field('location_name'); 
+                                $street_address = get_field('street_address'); 
+                                $city_state_zip = get_field('city_state_zip'); 
+                                $phone = get_field('phone');  
+                                $hours = get_field('hours');
+                                $google_maps_link = get_field('google_maps_link');
+                                    
+                            ?>
+                            <h1><?php echo $location_name; ?> </h1>
+                            <a href="<?php echo $google_maps_link; ?>" target="_blank"> <h3><?php echo $street_address; ?> | <?php echo $city_state_zip; ?> </h3> </a>
+                            <h3>Phone: <?php echo $phone ?> </h3>
+                            <h3>Hours: <?php echo $hours ?> </h3>
+
+                        </div>
+		
+                                
+                                
+                    </div>
+
+                <?php endwhile; ?>
+
+                <?php else: ?>
+                <?php endif; ?>
+            </div>
+        <?php wp_reset_postdata(); ?>
+    </div>
+</div>
+
 <script>
 
 
@@ -535,12 +584,28 @@
 </script>
 <script>
 $('#drop').hide();
+$('#full-screen').hide();
 $('#dropDesk').hide();
 $('#trigger').click( function(){
     $('#drop').toggle();
 });
 $('#mobile-ham').click( function(){
     $('#dropDesk').toggle();
+});
+</script>
+<script>
+$('#show-full-screen').click(function(){
+    $('#full-screen').toggle()
+    $('#full-page-content').toggle()
+});
+$('#show-full-screen-01').click(function(){
+    $('#full-screen').toggle()
+    $('#full-page-content').toggle()
+});
+
+$('#exit-full-screen').click(function(){
+    $('#full-screen').toggle()
+    $('#full-page-content').toggle()
 });
 </script>
 <script>
@@ -629,3 +694,4 @@ $('#try6').click( function(event){
 
 </script>
 </body>
+</html>
